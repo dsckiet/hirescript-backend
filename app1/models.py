@@ -25,3 +25,12 @@ class job(model.Model):
 	def __str__(self):
 		return profile
 
+class User(models.Model):
+	username = models.CharField(max_length='30')
+	e_mail = models.EmailField(blank=True)
+	password = models.CharField(min_length='7')
+
+	def __str__(self):
+		return user_data
+
+
